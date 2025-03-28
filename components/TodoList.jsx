@@ -6,12 +6,14 @@ export default function TodoList(props) {
     const { todos } = props
 
   return (
-    <ol>
-        {todos.map((todo, todoIndex)=>{
+    <ul className='main'>
+        {todos.map((todo, todoIndex) => {
             return(
-                <p>{todo}</p>
+                <TodoCard {...props} key={todoIndex} index={todoIndex} >
+                   <p>{todo}</p> 
+                </TodoCard>
             )
         })}
-    </ol>
+    </ul>
   )
 }
