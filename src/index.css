@@ -33,7 +33,7 @@ header,
 .main {
   max-width: 800px;
   width: 100%;
-  margin 0 auto;
+  margin: 0 auto;
   gap: 14px;
 }
 
@@ -51,12 +51,20 @@ header button {
   cursor: pointer;
 }
 
+header button:hover {
+  opacity: 0.7;
+}
+
 header button,
 header input {
   padding: 14px 18px;
   border: none;
   outline: none;
   background: white;
+}
+
+p {
+  font-size: 0.9em;
 }
 
 .main {
@@ -74,7 +82,7 @@ header input {
   background: white;
 }
 
-.todoitem p {
+.todoItem p {
   flex: 1;
 }
 
@@ -95,7 +103,7 @@ header input {
   opacity: 0.7;
 }
 
-@media (mid-width: 640px) {
+@media (min-width: 640px) {
 
   header button,
   header input {
